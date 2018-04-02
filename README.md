@@ -6,7 +6,6 @@ Esta é a primeira versão da API, ainda em versão beta, algumas mudanças e me
 ### Sumário
 
 - [Apenas JSON](#apenas-json)
-- [Regras de Segurança](#regra-de-segurança)
 - [Requisições](#requisições)
     - [Consultar Listas](#consultar-listas) ```GET /lists```
     - [Cadastrar Lead](#cadastrar-lead) ```GET /lead```
