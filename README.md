@@ -8,14 +8,9 @@ Esta é a primeira versão da API, ainda em versão beta, algumas mudanças e me
 - [Apenas JSON](#apenas-json)
 - [Regras de Segurança](#regra-de-segurança)
 - [Requisições](#requisições)
-    - [Fazendo Login](#fazendo-login) ```GET /login```
-    - [Retorna Usuário](#retorna-usuário) ```GET /user```
-    - [Retorna Jogos](#retorna-jogos) ```GET /games```
-    - [Retorna Relatório](#retorna-relatório) ```GET /school-report```
-    - [Retorna Status do Game](#retorna-status-do-game) ```GET /library```
-    - [Retorna Aula e Atividade Atual](#retorna-aula-e-atividade-atual) ```GET /current-class```
-    - [Salva Aula que o Aluno Parou](#salva-aula-que-o-aluno-parou) ```POST /save-progress```
-    - [Salva Pontuação do Aluno](#salva-pontuação-do-aluno) ```POST /save-score```
+    - [Consultar Listas](#consultar-listas) ```GET /lists```
+    - [Cadastrar Lead](#cadastrar-lead) ```GET /lead```
+    
 
 ### A URL base da API:
  
@@ -29,7 +24,7 @@ A API só suporta JSON, nós não vamos dar suporte a outro formato. Mesmo que v
 
 ---
 
-### Listas
+### Consultar Listas
 Faz consulta de todas as Listas de Leads disponíveis.
 
 #### Requisição:
