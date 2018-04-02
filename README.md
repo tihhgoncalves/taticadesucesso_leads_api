@@ -29,8 +29,38 @@ A API só suporta JSON, nós não vamos dar suporte a outro formato. Mesmo que v
 
 ---
 
-### Fazendo Login
-Faz login e retorna um_token_(e informações do usuário).
+### Listas
+Faz consulta de todas as Listas de Leads disponíveis.
+
+#### Requisição:
+
+```GET /lead```
+
+#### Parâmetros
+ - (nenhum)
+
+#### Resposta:
+
+```json
+{
+    "code": "202",
+    "data": [
+        {
+            "id": "1",
+            "name": "List one"
+        },
+        {
+            "id": "2",
+            "name": "List two"
+        }
+    ]
+}
+```
+
+---
+
+### Cadastrar Lead
+Faz registro do Lead
 
 #### Requisição:
 
@@ -38,8 +68,8 @@ Faz login e retorna um_token_(e informações do usuário).
 
 #### Parâmetros
  - ```list``` - ID da Lista.
- - ```email``` - E-mail do Lead.
- - ```whatsapp``` - Número do WhatsApp do Lead (opcional).
+ - ```email``` - E-mail do lead.
+ - ```whatsapp``` - Número do WhatsApp do lead (opcional).
 
 #### Resposta:
 
