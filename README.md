@@ -86,7 +86,7 @@ Instale antes do fechamdno do ```</head>``` o seguinte script:
     <!-- Leads Tática de Sucesso -->
     <script src="//leads.taticadesucesso.com.br/out_form.js"></script>
 
-E logo apóst você declarar seu formulário (ou seja: depois do ```</form>```), cole o seguinte código:
+E logo apóst você declarar seu formulário (ou seja: depois do ```</form>```), chame a função ```form_lead(class, callback)```, como no exemplo a seguir:
 
 
     <script>
