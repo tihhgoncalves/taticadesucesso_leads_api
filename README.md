@@ -9,6 +9,7 @@ Esta é a primeira versão da API, ainda em versão beta, algumas mudanças e me
 - [Requisições](#requisições)
     - [Consultar Listas](#consultar-listas) ```GET /lists```
     - [Cadastrar Lead](#cadastrar-lead) ```GET /lead```
+- [Script de Formulários](#script-de-formulários)
     
 
 ### A URL base da API:
@@ -75,6 +76,38 @@ Faz registro do Lead
     }
 }
 ```
+
+---
+
+# Script de Formulários
+
+Instale antes do fechamdno do ```</head>``` o seguinte script:
+
+    <!-- Leads Tática de Sucesso -->
+    <script src="//leads.taticadesucesso.com.br/out_form.js"></script>
+
+E logo apóst você declarar seu formulário (ou seja: depois do ```</form>```), cole o seguinte código:
+
+
+    <script>
+    form_lead('.class_do_form', function(d){
+
+        jQuery('.class_do_form button')
+            .attr("disabled","disabled")
+            .text('Enviado!');
+
+        jQuery('.class_do_form input').fadeOut('fast');
+
+        //Facebook Pixel
+        fbq('track', 'Lead', {
+            list: 'Gatilhos Mentais'
+        });
+  
+
+    });
+    </script>
+Onde ```.class_do_form``` é a classe no formulário. Os campos desse formulário devem respeitar os mesmos nomes dos parâmetros do [Cadastro de Lead](#cadastrar-lead).
+
 
 ---
 
