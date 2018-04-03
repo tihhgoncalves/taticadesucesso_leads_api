@@ -84,30 +84,30 @@ Faz registro do Lead
 Instale antes do fechamdno do ```</head>``` o seguinte script:
 
 ```html
-    <!-- Leads Tática de Sucesso -->
-    <script src="//leads.taticadesucesso.com.br/out_form.js"></script>
+<!-- Leads Tática de Sucesso -->
+<script src="//leads.taticadesucesso.com.br/out_form.js"></script>
 ```
 
 E logo apóst você declarar seu formulário (ou seja: depois do ```</form>```), chame a função ```form_lead(class, callback)```, como no exemplo a seguir:
 
 ```html
-    <script>
-    form_lead('.class_do_form', function(d){
+<script>
+form_lead('.class_do_form', function(d){
 
-        jQuery('.class_do_form button')
-            .attr("disabled","disabled")
-            .text('Enviado!');
+    jQuery('.class_do_form button')
+        .attr("disabled","disabled")
+        .text('Enviado!');
 
-        jQuery('.class_do_form input').fadeOut('fast');
+    jQuery('.class_do_form input').fadeOut('fast');
 
-        //Facebook Pixel
-        fbq('track', 'Lead', {
-            list: 'Gatilhos Mentais'
-        });
-  
-
+    //Facebook Pixel
+    fbq('track', 'Lead', {
+        list: 'Gatilhos Mentais'
     });
-    </script>
+
+
+});
+</script>
 ```
 Onde ```.class_do_form``` é a classe no formulário. Os campos desse formulário devem respeitar os mesmos nomes dos parâmetros do [Cadastro de Lead](#cadastrar-lead).
 
