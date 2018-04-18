@@ -63,7 +63,8 @@ Faz registro do Lead
 
 #### Parâmetros
  - ```list``` - ID da Lista.
- - ```email``` - E-mail do lead.
+- ```name``` - Nome do lead.
+- ```email``` - E-mail do lead.
  - ```whatsapp``` - Número do WhatsApp do lead (opcional).
 
 #### Resposta:
